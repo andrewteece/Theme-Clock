@@ -45,6 +45,11 @@ body {
   cursor: pointer;
 }
 
+.toggle:hover {
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+}
+
 .toggle:focus {
   outline: none;
 }

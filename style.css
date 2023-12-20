@@ -7,22 +7,22 @@
 }
 
 :root {
-  --clr-primary-400: hsl(0, 0%, 0%);
-  --cl-secondary-400: hsl(0, 0%, 100%);
+  --clr-primary: hsl(0, 0%, 0%);
+  --clr-secondary: hsl(0, 0%, 100%);
 }
 
 html {
-  transition: all 0, 5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 html.dark {
-  --clr-dark-primary: hsl(0, 0%, 100%);
-  --clr-dark-secondary: hsl(0, 0%, 20%);
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(0, 0%, 20%);
 }
 
 html.dark {
   background-color: #111;
-  color: var(--clr-dark-primary);
+  color: var(--clr-primary);
 }
 
 body {
@@ -35,8 +35,8 @@ body {
 }
 
 .toggle {
-  background-color: var(--clr-primary-400);
-  color: var(--cl-secondary-400);
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
   border: 0;
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
@@ -68,7 +68,7 @@ body {
   left: 50%;
   height: 4.0625rem;
   width: 0.1875rem;
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-primary);
   transform-origin: bottom center;
   transition: all 0, 5s ease-in;
 }
@@ -103,7 +103,7 @@ body {
   left: 50%;
   width: 0.3125rem;
   height: 0.3125rem;
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-primary);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -127,8 +127,8 @@ body {
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
-  background-color: var(--clr-primary-400);
-  color: var(--cl-secondary-400);
+  background-color: var(--clr-primary);
+  color: var(--cl-secondary);
   font-size: 0.75rem;
   transition: all 0.5s ease-in;
 }
